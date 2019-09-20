@@ -11,5 +11,7 @@ class RingBuffer:
 
   def get(self):
     #return list of buffer elements in their given order
-    #does not return None values, even if they are present
-    pass
+    for i in self.storage:
+      #does not return None values, even if they are present
+      if i is not None:
+        return i

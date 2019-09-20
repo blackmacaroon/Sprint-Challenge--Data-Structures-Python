@@ -47,14 +47,19 @@ class LinkedList:
     # a -> b -> c -> d -> 0
     # d -> c -> b -> a -> 0
     #track previous and current nodes
-    #iterative
     current_node = self.head
     previous_node = None
+    #iterative
+    #while loop if you don't know the length, for loop if you DO know the length
     while current_node:
+      #temp variable, stores what the arrow is pointing to
       following_node = current_node.next_node
+      #flip the arrow
       current_node.next_node = previous_node
+      # update previous to current and current to next
       previous_node = current_node
       current_node = following_node
+    #set new head (former tail)
     self.head = previous_node
 
 
