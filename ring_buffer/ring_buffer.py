@@ -6,7 +6,7 @@ class RingBuffer:
 
   def append(self, item):
     #adds element to the buffer
-    #if buffer is full, pop the oldest value
+    #if buffer is full, remove the oldest value
     pass
 
   def get(self):
