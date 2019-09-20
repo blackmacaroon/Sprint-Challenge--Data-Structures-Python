@@ -16,8 +16,8 @@ duplicates = []
 for name in names_1:
     if name in names_2:
         duplicates.append(name)
-#OG runtime: 4.99112606048584 seconds
-#improved runtime: runtime: 1.1109709739685059 seconds
+#OG runtime: 4.99112606048584 seconds O(n^2)
+#improved runtime: runtime: 1.1109709739685059 secondsO(n log n)
 
 
 # duplicates = set(names_1) & set(names_2)
